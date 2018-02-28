@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>PupilPath</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="Skedula" />
+	<meta name="keywords" content="Datacation, Skedula, Gradebook, Exam, School" />
+    <meta name="author" content="CaseNEX">
+    <meta name="apple-itunes-app" content="app-id=705981944">
+    <meta name="apple-itunes-app-tab" content="app-id=705981944">
+    <meta name="google-play-app" content="app-id=com.casenex.pupilpath">
+    <meta name="google-play-app-tab" content="app-id=com.casenex.pupilpath">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+    <link href="/scripts/smartbanner/jquery.ultimate-smartbanner.css" media="screen" rel="stylesheet"  type="text/css" >
+	<link href="/css/homepage/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/css/homepage/social-buttons.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="apple-touch-icon" href="/img/mobile/pupilpath.png" />
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="/scripts/jquery-1.7.min.js"></script>
+	<script src="/scripts/smartbanner/jquery.ultimate-smartbanner.js"></script>
+
+	<!--[if IE 6]>
+		<style type="text/css">
+			#OldBrowser {display:block !important}
+			div.sign-in-box {display:none !important}
+		</style>
+	<![endif]-->
+
+
+    <script type = "text/javascript">
+	    $(function() {  
+	    	$("#jsCheck").attr("style", "display:none");
+	    	$("#loginControls").attr("style", "display:block"); 
+	    	$.smartbanner({
+	    		daysHidden: 0,
+	    		daysReminder: 0,
+	    		icon: "/img/mobile/pupilpath.png"
+	    	})
+    	})
+	</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="centered-title">
+					<img src="https://casenex-public.s3.amazonaws.com/authserver/PupilPath-White.png" />
+				</div>
+
+				<div class="forGoogle" style="display: none">
+					<div>
+						Pupilpath is a school management system to empower teachers and instantly provide snapshots to parents and students to better drive instruction and learning.
+					</div>
+				</div>
+
+				<!--googleoff: all-->
+				<div style="border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative; display: none" id="OldBrowser">
+					<div style="width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;">
+						<div style="width: 75px; float: left;">
+							<img src="/img/NoIE/ie6nomore-warning.jpg" alt="Warning!"/>
+						</div>
+						<div style="width: 275px; float: left; font-family: Arial, sans-serif;">
+							<div style="font-size: 14px; font-weight: bold; margin-top: 12px;">You are using an outdated browser</div>
+							<div style="font-size: 12px; margin-top: 6px; line-height: 12px;">
+								For a better experience using this site, please upgrade to a modern web browser.
+							</div>
+						</div>
+						<div style="width: 75px; float: left;">
+							<a href="http://www.firefox.com" target="_blank">
+								<img src="/img/NoIE/ie6nomore-firefox.jpg" style="border: none;" alt="Get Firefox"/>
+							</a>
+						</div>
+						<div style="width: 75px; float: left;">
+							<a href="http://www.google.com/chrome" target="_blank">
+								<img src="/img/NoIE/ie6nomore-chrome.jpg" style="border: none;" alt="Get Google Chrome"/>
+							</a>
+						</div>
+						<div style="float: left;">
+							<a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie" target="_blank">
+								<img src="/img/NoIE/ie6nomore-ie8.jpg" style="border: none;" alt="Get Internet Explorer 8"/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--googleon: all-->
+
+				<div class="sign-in-box">
+					<div style="padding-bottom: 20px">
+						<h2>Welcome</h2>
+					</div>
+					<div id="jsCheck" style="display: block">
+						<p>Please enable javascript to access this website.</p>
+					</div>
+					<div id="loginControls" style="display: none">
+						
+							<a class="btn btn-primary btn-large" id="sign_in" href="/redirectToAuth.aspx" >
+						 
+							<i class="icon-lock icon-white"></i> Sign In </a>
+							<p>&nbsp;</p>
+							<a href="/Register/Parent">Parents Register</a>
+							/
+							<a href="/Register/Student">Student Register</a>
+							<p>&nbsp;</p>
+
+							<a title="follow us on facebook" href="https://www.facebook.com/pages/PupilPath/321282347906489" class="sb blue facebook">Facebook</a>
+							<a title="follow us on twitter" href="https://twitter.com/#!/PupilPath" class="sb green twitter" >Twitter</a>
+							<a title="datacation on linked-in" href="http://www.linkedin.com/company/datacation" class="sb purple linkedin">LinkedIn</a>
+							<a title="Check out the blog" href="http://blog.datacation.com" class="sb orange rss">Blog</a>
+							<p>&nbsp;</p>
+							<a href="Guide.pdf">Instructions / Quick Setup Document</a>
+							<p>&nbsp;</p>
+							<a href="/Register/Forgot">Forgot Password?</a>
+							<p>&nbsp;</p>
+
+						</div>
+					</div>
+
+					<!--googleoff: all-->
+					<div class = "buorg" id="IEWarn" style="display: none">
+						<div>
+							Warning: Your browser has known security flaws, slow loading issues and may not display all features of this and other websites.
+							<a href="#" onclick="$('#login-content').hide(); $('#OldBrowser').show(); return false;" >Click here to update your browser</a>.
+						</div>
+					</div>
+					<!--googleon: all-->
+
+					<div class="centered-title" style="padding-top: 20px">
+						<p style="color: #8E8D8D !important">
+							© <a target="_blank" href="http://www.casenex.com/" style="color: #8E8D8D !important">CaseNEX</a>/<a target="_blank" href="http://www.datacation.com/" style="color: #8E8D8D !important">Datacation</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
