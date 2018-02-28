@@ -16,8 +16,8 @@ tree = html.fromstring(result.text)
 token = tree.xpath("//input[@name='authenticity_token']/@value")[0]
 
 payload["authenticity_token"] = token
-payload["user[username]"] = "207843822"
-payload["user[password]"] = "207843822"
+payload["user[username]"] = "2"
+payload["user[password]"] = "2"
 
 result = session.post(
     login_url,
@@ -35,10 +35,10 @@ result = session.get(
 dashboard = "https://pupilpath.skedula.com/auth/login/loginPupilPath.aspx"
 
 """
-12X271 - East Bronx Academy for the Future
-DBN = 12X271
-2017-2018: Term 2
-Term = 172
+1
+DBN = 1
+2
+2
 """
 tree = html.fromstring(result.text)
 print(tree)
@@ -52,9 +52,9 @@ Student = tree.xpath(Student)
 print(DBN, Term, Student)
 
 payload = {
-    "DBN": "12X271",
-    "Term": "172",
-    "Student": "207843822"
+    "DBN": "2",
+    "Term": "2",
+    "Student": "2"
 }
 
 result = session.post(

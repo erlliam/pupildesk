@@ -26,8 +26,8 @@ current = session.get(
 )
 
 payload = {
-    "user[username]": "207843822",
-    "user[password]": "207843822"
+    "user[username]": "2",
+    "user[password]": "2"
 }
 
 current = session.post(
